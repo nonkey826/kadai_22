@@ -7,6 +7,15 @@ body p a {
 font-size: 20px;
 }
 
+
+@media screen and (max-width: 768px){
+    body p{
+        font-size: 25px;
+    } }  
+
+
+
+
 header {
     background-color: rgb(244, 79, 79);
     text-align: center;
@@ -25,7 +34,7 @@ h1{
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 #parent{
     display: flex;
     justify-content: space-between;
@@ -59,6 +68,11 @@ h2{
     font-size: 25px;
 }
 
+@media screen and (max-width: 768px){
+h2{
+    font-size: 30px;
+}}
+
 img{
     margin: 10px 0 10px 0;
     width: 70%;
@@ -70,6 +84,12 @@ footer{
     text-align: center;
 }
 
-a:hover{
-color: rgb(255, 255, 255);
+/* 訪問済みリンクのスタイル */
+a:visited {
+    color: rgb(193, 234, 251); /* 訪問済みリンクの色 */
+}
+
+  /* マウスカーソルがリンクに乗ったときのスタイル */
+a:hover {
+    color: rgb(245, 178, 168); /* マウスカーソルが乗った時のリンクの色 */
 }
