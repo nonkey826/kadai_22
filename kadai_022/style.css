@@ -1,0 +1,117 @@
+
+body h1, body p {
+    margin: 0;
+}
+
+body p a {
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    body p{
+        font-size: 25px;
+    }}
+
+
+
+@media screen and (max-width: 768px) {
+
+    #parent {
+        flex-direction: column;
+    }}
+    @media screen and (max-width: 768px) {
+    .contents {
+        flex-basis: 100%; 
+        /* 幅を100%に設定して縦並びにする */
+    }}
+
+
+/* ヘッダー */
+header {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    margin-bottom: 20px;/* 下の余白を20pxにします。 */
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+/* レスポンシブデザイン */
+@media screen and (min-width: 769px) {
+    #parent {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* コンテンツ */
+.contents {
+    border: solid 3px rgb(238, 204, 204);
+    text-align: center;
+    flex-basis: 25%;
+    /* 親要素の25% */
+    margin: 20px 0px;
+    padding: 10px 15px;
+}
+
+.contents h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+
+/* 傘の部分だけ青にする */
+.contents p:nth-child(3)::first-letter {
+    color: rgb(97, 206, 249);
+    font-weight: bold;
+}
+
+.contents h2 {
+    border-bottom: 3px dotted rgb(236, 122, 122);
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .contents h2 {
+        font-size: 30px;
+
+    }}
+
+
+@media screen and (max-width: 768px) {
+    .contents h2 {
+        font-size: 30px;
+    }
+}
+
+img {
+    margin: 10px 0;
+    width: 70%;
+}
+
+/* フッター */
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+
+a:visited {
+    color: rgb(193, 234, 251); /* 訪問済みリンクの色 */
+}
+
+
+a:hover {
+    color: rgb(245, 178, 168); 
+}
+
+
+
+
+
+
+
+
+
