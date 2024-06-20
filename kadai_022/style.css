@@ -18,11 +18,11 @@ body p a {
     #parent {
         flex-direction: column;
     }}
-    @media screen and (max-width: 768px) {
+
     .contents {
         flex-basis: 100%; 
         /* 幅を100%に設定して縦並びにする */
-    }}
+    }
 
 
 /* ヘッダー */
